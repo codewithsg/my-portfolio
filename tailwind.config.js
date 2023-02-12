@@ -10,7 +10,22 @@ module.exports = {
       lg:'976px',
       xl:'1440px'
     },
-    extend: {},
+    extend: {
+      colors:{
+        darkBlack:"#1E1E1E",
+        lightBlack:"#2D2D2D",
+        footerBlack:"#252526",
+        grayishWhite:"#8E9093",
+        textWhite:"#CCCCCC",
+        brightWhite:"#FFFFFF",
+        brightYellow:"#E8AE39",
+        skyBlue:"#6099BD"
+      },
+      fontFamily:{
+        "inter":['"Inter"','sans-serif'],
+        "firaCode":['"Fira Code"','monospace']
+      }
+    },
   },
   plugins: [],
 }
