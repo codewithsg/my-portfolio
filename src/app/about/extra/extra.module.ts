@@ -4,6 +4,7 @@ import { CertificateComponent } from './certificate/certificate.component';
 import { LanguageComponent } from './language/language.component';
 import { VolunteeringComponent } from './volunteering/volunteering.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { ExtraRoutingModule } from './extra.routing';
 
 
 
@@ -15,7 +16,8 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     HobbiesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ExtraRoutingModule
   ]
 })
 export class ExtraModule { }

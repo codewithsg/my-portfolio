@@ -5,6 +5,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TestimoniesComponent } from './testimonies/testimonies.component';
+import { ExtraModule } from './extra/extra.module';
+import { AboutRoutingModule } from './about.routing';
 
 
 
@@ -17,7 +19,9 @@ import { TestimoniesComponent } from './testimonies/testimonies.component';
     TestimoniesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ExtraModule,
+    AboutRoutingModule
   ]
 })
 export class AboutModule { }
