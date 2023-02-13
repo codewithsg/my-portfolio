@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HelloComponent } from './hello.component';
+import { HelloRoutingModule } from './hello.routing';
 
 
 
@@ -9,7 +10,8 @@ import { HelloComponent } from './hello.component';
     HelloComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HelloRoutingModule
   ]
 })
 export class HelloModule { }
