@@ -14,7 +14,7 @@ module.exports = {
       colors:{
         darkBlack:"#1E1E1E",
         lightBlack:"#2D2D2D",
-        footerBlack:"#252526",
+        normalBlack:"#252526",
         grayishWhite:"#8E9093",
         textWhite:"#CCCCCC",
         brightWhite:"#FFFFFF",
@@ -24,6 +24,12 @@ module.exports = {
       fontFamily:{
         "inter":['"Inter"','sans-serif'],
         "firaCode":['"Fira Code"','monospace']
+      },
+      width:{
+        '161':'161px'
+      },
+      height:{
+        '47':'47px'
       }
     },
   },
