@@ -8,22 +8,22 @@ import { TestimoniesComponent } from "./testimonies/testimonies.component";
 
 const aboutRoutes:Routes = [
     {
-        path:'/bio',
+        path:'bio',
         component:BiographyComponent
     },{
-        path:'/education',
+        path:'education',
         component:EducationComponent
     },{
-        path:'/experience',
+        path:'experience',
         component:ExperienceComponent
     },{
-        path:'/extra',
+        path:'extra',
         loadChildren:()=>import('./extra/extra.module').then(m=>m.ExtraModule)
     },{
-        path:'/skills',
+        path:'skills',
         component:SkillsComponent
     },{
-        path:'/testimonies',
+        path:'testimonies',
         component:TestimoniesComponent
     }
 ]
