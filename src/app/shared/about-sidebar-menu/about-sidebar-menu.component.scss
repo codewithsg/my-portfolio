@@ -1,28 +1,32 @@
 .sidebar {
-    width: 200px; /* set the width of the sidebar */
-    background-color: #eee; /* set the background color */
-    // padding: 20px; /* add some padding */
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    margin-top: 47px;
   }
-
+  
   .sidebar ul {
-    list-style: none; /* remove bullet points from the list */
+    list-style-type: none;
     margin: 0;
     padding: 0;
   }
-
+  
   .sidebar li {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px; /* add some space between the list items */
-  }
-
-  .sidebar a {
-    display: block; /* make the links full width of their container */
     padding: 10px;
-    text-decoration: none;
-    color: #333; /* set the color of the links */
+    font-size: 18px;
   }
-
-  .sidebar li:hover {
-    background-color: #ddd; /* change the background color on hover */
+  
+  .sidebar li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #2F2F2F;
   }
