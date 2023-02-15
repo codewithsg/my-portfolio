@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --lightBlackColor: #2d2d2d;
+    --darkBlackColor: #1E1E1E;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

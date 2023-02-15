@@ -4,6 +4,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutSidebarMenuComponent } from './about-sidebar-menu/about-sidebar-menu.component';
 import { ProjectSidebarMenuComponent } from './project-sidebar-menu/project-sidebar-menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
     NavBarComponent,

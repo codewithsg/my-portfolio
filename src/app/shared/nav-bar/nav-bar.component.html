@@ -1,9 +1,9 @@
 <nav class="w-full h-47 bg-normalBlack">
     <div class="flex h-full">
         <ul class="flex flex-wrap h-full bg-lightBlack text-grayishWhite font-inter font-normal text-base">
-            <li class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold" (click)="gotoHello()"><a href="/hello">Hello</a></li>
-            <li class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold" (click)="gotoAbout()"><a href="/about/bio">About</a></li>
-            <li class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold" (click)="gotoProject()"><a href="/project">Project</a></li>
+            <li class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold" (click)="gotoHello()"><a [routerLink]="['/hello']" routerLinkActive="active-link">Hello</a></li>
+            <li class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold" (click)="gotoAbout()"><a [routerLink]="['/about/bio']" routerLinkActive="active-link">About</a></li>
+            <li class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold" (click)="gotoProject()"><a [routerLink]="['/project']" routerLinkActive="active-link">Project</a></li>
         </ul>
     </div>
 </nav>
