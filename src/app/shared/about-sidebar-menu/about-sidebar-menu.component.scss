@@ -1,0 +1,28 @@
+.sidebar {
+    width: 200px; /* set the width of the sidebar */
+    background-color: #eee; /* set the background color */
+    // padding: 20px; /* add some padding */
+  }
+
+  .sidebar ul {
+    list-style: none; /* remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px; /* add some space between the list items */
+  }
+
+  .sidebar a {
+    display: block; /* make the links full width of their container */
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* set the color of the links */
+  }
+
+  .sidebar li:hover {
+    background-color: #ddd; /* change the background color on hover */
+  }

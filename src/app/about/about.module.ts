@@ -7,6 +7,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { TestimoniesComponent } from './testimonies/testimonies.component';
 import { ExtraModule } from './extra/extra.module';
 import { AboutRoutingModule } from './about.routing';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -21,7 +22,8 @@ import { AboutRoutingModule } from './about.routing';
   imports: [
     CommonModule,
     ExtraModule,
-    AboutRoutingModule
+    AboutRoutingModule,
+    SharedModule
   ]
 })
 export class AboutModule { }
