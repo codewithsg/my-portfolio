@@ -5,6 +5,7 @@ import { LanguageComponent } from './language/language.component';
 import { VolunteeringComponent } from './volunteering/volunteering.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ExtraRoutingModule } from './extra.routing';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -17,7 +18,8 @@ import { ExtraRoutingModule } from './extra.routing';
   ],
   imports: [
     CommonModule,
-    ExtraRoutingModule
+    ExtraRoutingModule,
+    SharedModule
   ]
 })
 export class ExtraModule { }
