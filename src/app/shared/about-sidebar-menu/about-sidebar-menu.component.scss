@@ -2,3 +2,7 @@ img, p {
   display: inline-block;
   vertical-align: middle; /* align the elements vertically in the middle */
 }
+
+.active-link{
+  background-color: var(--darkBlackColor);
+}

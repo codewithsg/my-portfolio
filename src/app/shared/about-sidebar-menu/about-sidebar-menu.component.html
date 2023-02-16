@@ -1,17 +1,17 @@
 <div class="bg-normalBlack w-[230px] h-full">
     <ul class="mt-[-10px]">
-        <li class="mt-[10px] ml-[5px]"><img class="mr-[10px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Biography</p></li>
-        <li class="mt-[10px] ml-[5px]"><img class="mr-[10px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Experience</p></li>
-        <li class="mt-[10px] ml-[5px]"><img class="mr-[10px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Education</p></li>
-        <li class="mt-[10px] ml-[5px]"><img class="mr-[10px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Skills</p></li>
-        <li class="mt-[10px] ml-[5px]"><img class="mr-[10px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Testimonies</p></li>
-        <li class="mt-[10px] ml-[5px]"><img class="mr-[10px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Extra</p>
-            <ul>
-                <li class="mt-[10px] ml-[20px]"><img class="mr-[10px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple">Certificate</p></li>
-                <li class="mt-[10px] ml-[20px]"><img class="mr-[10px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple">Language</p></li>
-                <li class="mt-[10px] ml-[20px]"><img class="mr-[10px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple">Volunteering</p></li>
-                <li class="mt-[10px] ml-[20px]"><img class="mr-[10px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple">Hobbies</p></li>
-            </ul>
+        <li routerLinkActive="active-link" class="mt-[10px] hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a [routerLink]="['/about/bio']"> Biography</a></p></li>
+        <li routerLinkActive="active-link" class="mt-[10px] hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a [routerLink]="['/about/experience']"> Experience</a></p></li>
+        <li routerLinkActive="active-link" class="mt-[10px] hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a [routerLink]="['/about/education']"> Education</a></p></li>
+        <li routerLinkActive="active-link" class="mt-[10px] hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a [routerLink]="['/about/skills']"> Skills</a></p></li>
+        <li routerLinkActive="active-link" class="mt-[10px] hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a [routerLink]="['/about/testimonies']"> Testimonies</a></p></li>
+        <li routerLinkActive="active-link" class="mt-[10px] hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]" src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Extra</p>
         </li>
+    </ul>
+    <ul>
+        <li routerLinkActive="active-link" class="hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple"><a [routerLink]="['/about/extra/certificate']">Certificate</a></p></li>
+        <li routerLinkActive="active-link" class="hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple"><a [routerLink]="['/about/extra/language']">Language</a></p></li>
+        <li routerLinkActive="active-link" class="hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple"><a [routerLink]="['/about/extra/volunteering']">Volunteering</a></p></li>
+        <li routerLinkActive="active-link" class="hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]" src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar"><p class="font-firaCode font-medium text-[14px] text-darkPurple"><a [routerLink]="['/about/extra/hobbies']">Hobbies</a></p></li>
     </ul>
 </div>
