@@ -22,7 +22,8 @@ module.exports = {
         textWhite: "#CCCCCC",
         brightWhite: "#FFFFFF",
         brightYellow: "#E8AE39",
-        skyBlue: "#6099BD"
+        skyBlue: "#6099BD",
+        darkPurple:'#BC3FBC'
       },
       fontFamily: {
         "inter": ['"Inter"', 'sans-serif'],

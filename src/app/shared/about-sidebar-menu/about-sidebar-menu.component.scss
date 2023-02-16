@@ -1,31 +1,4 @@
-.sidebar {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-    width: 200px;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin-top: 47px;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    padding: 10px;
-    font-size: 18px;
-  }
-  
-  .sidebar li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .sidebar li a:hover {
-    background-color: #2F2F2F;
-  }
+img, p {
+  display: inline-block;
+  vertical-align: middle; /* align the elements vertically in the middle */
+}
