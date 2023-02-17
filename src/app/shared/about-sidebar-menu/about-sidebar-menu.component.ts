@@ -43,18 +43,18 @@ export class AboutSidebarMenuComponent implements OnInit {
   }
 
   goToCertificate(){
-    this.router.navigate(['about/extra/certificate'])
+    this.router.navigate(['about/certificate'])
   }
 
   goToLanguage(){
-    this.router.navigate(['about/extra/language'])
+    this.router.navigate(['about/language'])
   }
 
   goToVolunteering(){
-    this.router.navigate(['about/extra/volunteering'])
+    this.router.navigate(['about/volunteering'])
   }
 
   goToHobbies(){
-    this.router.navigate(['about/extra/hobbies'])
+    this.router.navigate(['about/hobbies'])
   }
 }
