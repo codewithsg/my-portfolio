@@ -5,9 +5,12 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TestimoniesComponent } from './testimonies/testimonies.component';
-import { ExtraModule } from './extra/extra.module';
 import { AboutRoutingModule } from './about.routing';
 import { SharedModule } from '../shared/shared.module';
+import { CertificateComponent } from './certificate/certificate.component';
+import { LanguageComponent } from './language/language.component';
+import { VolunteeringComponent } from './volunteering/volunteering.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
 
 
@@ -17,11 +20,14 @@ import { SharedModule } from '../shared/shared.module';
     ExperienceComponent,
     EducationComponent,
     SkillsComponent,
-    TestimoniesComponent
+    TestimoniesComponent,
+    CertificateComponent,
+    LanguageComponent,
+    VolunteeringComponent,
+    HobbiesComponent
   ],
   imports: [
     CommonModule,
-    ExtraModule,
     AboutRoutingModule,
     SharedModule
   ]

@@ -1,10 +1,14 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { BiographyComponent } from "./biography/biography.component";
+import { CertificateComponent } from "./certificate/certificate.component";
 import { EducationComponent } from "./education/education.component";
 import { ExperienceComponent } from "./experience/experience.component";
+import { HobbiesComponent } from "./hobbies/hobbies.component";
+import { LanguageComponent } from "./language/language.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { TestimoniesComponent } from "./testimonies/testimonies.component";
+import { VolunteeringComponent } from "./volunteering/volunteering.component";
 
 const aboutRoutes:Routes = [
     {
@@ -17,14 +21,23 @@ const aboutRoutes:Routes = [
         path:'experience',
         component:ExperienceComponent
     },{
-        path:'extra',
-        loadChildren:()=>import('./extra/extra.module').then(m=>m.ExtraModule)
-    },{
         path:'skills',
         component:SkillsComponent
     },{
         path:'testimonies',
         component:TestimoniesComponent
+    },{
+        path:'certificate',
+        component:CertificateComponent
+    },{
+        path:'hobbies',
+        component:HobbiesComponent
+    },{
+        path:'language',
+        component:LanguageComponent
+    },{
+        path:'volunteering',
+        component:VolunteeringComponent
     }
 ]
 
