@@ -9,18 +9,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AboutSidebarMenuComponent implements OnInit {
   constructor(
     private router:Router,
-    private activatedRoute:ActivatedRoute
   ){}
 
   ngOnInit() {
-    console.log(this.activatedRoute.url);
+    if(this.router.url === '/about/certificate' || this.router.url === '/about/language' || this.router.url === '/about/volunteering' || this.router.url === '/about/hobbies'){
+      this.toogleExtraUl();
+    }
   }
 
   toogleExtraUl(){
     const extraUlElement = document.getElementById('extraUl');
-    console.log('before:',extraUlElement)
     extraUlElement?.classList.toggle('hidden');
-    console.log('after:',extraUlElement);
   }
 
   goToBiography(){
