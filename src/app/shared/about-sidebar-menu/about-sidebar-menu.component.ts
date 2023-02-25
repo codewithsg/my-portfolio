@@ -15,11 +15,20 @@ export class AboutSidebarMenuComponent implements OnInit {
     if(this.router.url === '/about/certificate' || this.router.url === '/about/language' || this.router.url === '/about/volunteering' || this.router.url === '/about/hobbies'){
       this.toogleExtraUl();
     }
+
+    if(this.router.url === '/about/tech-skill' || this.router.url === '/about/soft-skill'){
+      this.toogleSkillUl();
+    }
   }
 
   toogleExtraUl(){
     const extraUlElement = document.getElementById('extraUl');
     extraUlElement?.classList.toggle('hidden');
+  }
+
+  toogleSkillUl(){
+    const skillUlElement = document.getElementById('skillsUl');
+    skillUlElement?.classList.toggle('hidden');
   }
 
   goToBiography(){
@@ -34,8 +43,12 @@ export class AboutSidebarMenuComponent implements OnInit {
     this.router.navigate(['about/education'])
   }
 
-  goToSkills(){
-    this.router.navigate(['about/skills'])
+  goToTechSkill(){
+    this.router.navigate(['about/tech-skill'])
+  }
+
+  goToSoftSkill(){
+    this.router.navigate(['about/soft-skill'])
   }
 
   goToTestimonies(){

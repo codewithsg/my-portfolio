@@ -2,10 +2,12 @@
     <div class="fixed w-[230px] h-full">
         <ul class="mt-[-10px]">
             <li (click)="goToBiography()" routerLinkActive="active-link"
-                class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]"
-                    src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar">
-                <p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a [routerLink]="['/about/bio']">
-                        Biography</a></p>
+                class="mt-[10px] cursor-pointer hover:bg-darkBlack">
+                <img class="mr-[10px] ml-[5px]" src="./../../../assets/img/rightArrow.svg"
+                    alt="right arrow for about menu sidebar">
+                <p class="font-firaCode font-noraml text-[16px] text-brightYellow">
+                    <a [routerLink]="['/about/bio']">Biography</a>
+                </p>
             </li>
             <li (click)="goToExperience()" routerLinkActive="active-link"
                 class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]"
@@ -19,12 +21,28 @@
                 <p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a
                         [routerLink]="['/about/education']"> Education</a></p>
             </li>
-            <li (click)="goToSkills()" routerLinkActive="active-link"
+            <li (click)="toogleSkillUl()" routerLinkActive="active-link"
                 class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]"
                     src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar">
-                <p class="font-firaCode font-noraml text-[16px] text-brightYellow"><a [routerLink]="['/about/skills']">
-                        Skills</a></p>
+                <p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Skills</p>
             </li>
+                <ul id="skillsUl" class="hidden">
+                    <li (click)="goToTechSkill()" routerLinkActive="active-link"
+                        class="cursor-pointer hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]"
+                            src="./../../../assets/img/darkPurpleRightArrow.svg"
+                            alt="right arrow for about menu sidebar">
+                        <p class="font-firaCode font-medium text-[14px] text-darkPurple"><a
+                                [routerLink]="['/about/tech-skill']">Tech Skills</a></p>
+                    </li>
+                    <li (click)="goToSoftSkill()" routerLinkActive="active-link"
+                        class="cursor-pointer hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]"
+                            src="./../../../assets/img/darkPurpleRightArrow.svg"
+                            alt="right arrow for about menu sidebar">
+                        <p class="font-firaCode font-medium text-[14px] text-darkPurple"><a
+                                [routerLink]="['/about/soft-skill']">Soft Skills</a></p>
+                    </li>
+                </ul>
+            
             <li (click)="goToTestimonies()" routerLinkActive="active-link"
                 class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]"
                     src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar">
