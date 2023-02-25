@@ -6,7 +6,8 @@ import { EducationComponent } from "./education/education.component";
 import { ExperienceComponent } from "./experience/experience.component";
 import { HobbiesComponent } from "./hobbies/hobbies.component";
 import { LanguageComponent } from "./language/language.component";
-import { SkillsComponent } from "./skills/skills.component";
+import { SoftSkillComponent } from "./soft-skill/soft-skill.component";
+import { TechSkillComponent } from "./tech-skill/tech-skill.component";
 import { TestimoniesComponent } from "./testimonies/testimonies.component";
 import { VolunteeringComponent } from "./volunteering/volunteering.component";
 
@@ -21,8 +22,11 @@ const aboutRoutes:Routes = [
         path:'experience',
         component:ExperienceComponent
     },{
-        path:'skills',
-        component:SkillsComponent
+        path:'tech-skill',
+        component:TechSkillComponent
+    },{
+        path:'soft-skill',
+        component:SoftSkillComponent
     },{
         path:'testimonies',
         component:TestimoniesComponent
