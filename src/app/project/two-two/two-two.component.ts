@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./two-two.component.scss']
 })
 export class TwoTwoComponent {
-
+  goToRMS(){
+    window.open('https://github.com/codewithsg/restaurant-management-api','_blank')
+  }
 }
