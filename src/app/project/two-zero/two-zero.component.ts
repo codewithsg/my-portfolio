@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./two-zero.component.scss']
 })
 export class TwoZeroComponent {
-
+goToRoomFinder(){
+  window.open('https://github.com/codewithsg/room-finder-minor','_blank');
+}
 }
