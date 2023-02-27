@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectComponent } from './project.component';
 import { ProjectRoutingModule } from './project.routing';
 import { SharedModule } from '../shared/shared.module';
 import { TwoZeroComponent } from './two-zero/two-zero.component';
@@ -12,7 +11,6 @@ import { TwoThreeComponent } from './two-three/two-three.component';
 
 @NgModule({
   declarations: [
-    ProjectComponent,
     TwoZeroComponent,
     TwoOneComponent,
     TwoTwoComponent,
