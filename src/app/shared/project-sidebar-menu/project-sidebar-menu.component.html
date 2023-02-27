@@ -1,11 +1,11 @@
 <div class="bg-normalBlack relative 2-[230px] h-full z-40">
     <div class="fixed h-full w-[230px]">
-        <ul class="text-white">
-            <li>All</li>
-            <li>2023</li>
-            <li>2022</li>
-            <li>2021</li>
-            <li>2020</li>
+        <p class="text-white text-[24px] p-[20px]">Timeline</p>
+        <ul class=" mt-[-10px] font-firaCode font-normal text-[16px] text-brightYellow">
+            <li (click)="goTo2023()" routerLinkActive="active-link" class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img src="./../../../assets/img/rightArrow.svg" alt="right arrow" class="mr-[10px] ml-[5px]"><a [routerLink]="['/project/twenty-three']">2023</a></li>
+            <li (click)="goTo2022()" routerLinkActive="active-link" class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img src="./../../../assets/img/rightArrow.svg" alt="right arrow" class="mr-[10px] ml-[5px]"><a [routerLink]="['/project/twenty-two']">2022</a></li>
+            <li (click)="goTo2021()" routerLinkActive="active-link" class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img src="./../../../assets/img/rightArrow.svg" alt="right arrow" class="mr-[10px] ml-[5px]"><a [routerLink]="['/project/twenty-one']">2021</a></li>
+            <li (click)="goTo2020()" routerLinkActive="active-link" class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img src="./../../../assets/img/rightArrow.svg" alt="right arrow" class="mr-[10px] ml-[5px]"><a [routerLink]="['/project/twenty']">2020</a></li>
         </ul>
     </div>
 </div>

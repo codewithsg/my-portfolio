@@ -13,15 +13,23 @@ export class ProjectSidebarMenuComponent {
 
   goToAll(){}
 
-  goTo2020(){}
+  goTo2020(){
+    this.router.navigate(['project/twenty'])
+  }
 
-  goTo2021(){}
+  goTo2021(){
+    this.router.navigate(['project/twenty-one'])
+  }
 
 
-  goTo2022(){}
+  goTo2022(){
+    this.router.navigate(['project/twenty-two'])
+  }
 
 
-  goTo2023(){}
+  goTo2023(){
+    this.router.navigate(['project/twenty-three'])
+  }
 
 
 

@@ -18,6 +18,6 @@ export class NavBarComponent {
   }
 
   gotoProject(){
-    this.router.navigate(['project'])
+    this.router.navigate(['project/twenty-three'])
   }
 }

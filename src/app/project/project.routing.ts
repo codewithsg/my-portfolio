@@ -6,11 +6,12 @@ import { TwoTwoComponent } from "./two-two/two-two.component";
 import { TwoZeroComponent } from "./two-zero/two-zero.component";
 
 const projectRoutes:Routes = [
+    // {
+    //     path:'',
+    //     component:TwoThreeComponent
+    // },
     {
-        path:'',
-        component:TwoThreeComponent
-    },{
-        path:'twwnty-three',
+        path:'twenty-three',
         component:TwoThreeComponent
     },{
         path:'twenty-two',
