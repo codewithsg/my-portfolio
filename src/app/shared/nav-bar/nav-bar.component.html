@@ -1,6 +1,6 @@
-<nav class="relative z-50 w-full h-47 bg-normalBlack ">
-    <div class="fixed hidden brp:block w-full h-47">
-        <div class="flex h-full w-full">
+<nav class="relative z-50 w-full h-47 bg-normalBlack mx-auto">
+    <div class="fixed  w-full h-47">
+        <div class="flex hidden xs:block h-full w-full">
             <ul class="flex flex-wrap h-full bg-lightBlack text-grayishWhite font-inter font-normal text-base">
                 <li routerLinkActive="active-link"
                     class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold"
@@ -12,7 +12,21 @@
                     class="flex-1 w-161 pl-12 pt-3 cursor-pointer h-full hover:bg-darkBlack hover:text-brightYellow hover:font-bold"
                     (click)="gotoProject()"><a [routerLink]="['/project']">Project</a></li>
             </ul>
-            <div class="flex-auto"></div>
+        </div>
+        <!-- Hamburger Icon -->
+        <button (click)="hamburgerIconClick()" id="menu-btn" class="block hamburger xs:hidden focus:outline-none">
+           <span class="hamburger-top"></span>
+           <span class="hamburger-middle"></span>
+           <span class="hamburger-bottom"></span>
+       </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="xs:hidden">
+        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-semibold bg-lightBlack xs:self-center left-6 right-6 drop-shadow-md text-grayishWhite">
+            <a href="hello" class="hover:bg-darkBlack hover:text-brightYellow hover:font-bold">Hello</a>
+            <a href="about/bio" class="hover:bg-darkBlack hover:text-brightYellow hover:font-bold">About</a>
+            <a href="projects/two-three" class="hover:bg-darkBlack hover:text-brightYellow hover:font-bold">Project</a>
         </div>
     </div>
 </nav>
