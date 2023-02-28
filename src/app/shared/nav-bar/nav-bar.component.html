@@ -15,7 +15,7 @@
         </div>
         <!-- Hamburger Icon -->
         
-        <button id="menu-btn" class="block hamburger xs:hidden focus:outline-none">
+        <button (click)="hamburgerMenu()" id="menu-btn" class="block hamburger ml-[8vw] xs:hidden focus:outline-none">
             <span class="hamburger-top"></span>
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
@@ -25,7 +25,7 @@
     <!-- Mobile Menu -->
     <div class="xs:hidden">
         <div id="menu"
-            class="absolute font-inter  flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-lightBlack xs:w-auto xs:self-center left-6 right-6 text-grayishWhite">
+            class="absolute hidden font-inter  flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-lightBlack xs:w-auto xs:self-center left-6 right-6 text-grayishWhite">
             <a (click)="gotoHello()">Hello</a>
             <a (click)="gotoAbout()">About</a>
             <a (click)="gotoProject()">Project</a>
