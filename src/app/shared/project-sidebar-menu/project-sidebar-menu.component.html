@@ -1,4 +1,4 @@
-<div class="bg-normalBlack relative w-[230px] min-h-[95vh] z-40">
+<div class="hidden bg-normalBlack relative w-[230px] min-h-[95vh] z-40 md:block">
     <div class="fixed h-full w-[230px]">
         <p class="text-textWhite text-[24px] p-[20px]">Timeline</p>
         <ul class=" mt-[-10px] font-firaCode font-normal text-[16px] text-brightYellow">
@@ -7,5 +7,18 @@
             <li (click)="goTo2021()" routerLinkActive="active-link" class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img src="./../../../assets/img/rightArrow.svg" alt="right arrow" class="mr-[10px] ml-[5px]"><p><a [routerLink]="['/project/twenty-one']">2021</a></p></li>
             <li (click)="goTo2020()" routerLinkActive="active-link" class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img src="./../../../assets/img/rightArrow.svg" alt="right arrow" class="mr-[10px] ml-[5px]"><p><a [routerLink]="['/project/twenty']">2020</a></p></li>
         </ul>
+    </div>
+</div>
+
+<div  class="md:hidden block fixed  opacity-70 z-[100] mt-[40vh] left-0">
+    <a (click)="toggleProjectSideBarMenu()" ><img  id="projectSideBarArrow" class="origin-center cursor-pointer" src="./../../../assets/img/sideBarMenu.svg" alt="sideBarMenu"></a>
+</div>
+
+<div class=" md:hidden fixed h-full w-full opacity-90 mt-[18vh] left-0">
+    <div id="projectSideBarMenu" class="flex flex-col hidden absolute text-firaCode items-center self-end py-8 mt-10 space-y-6 font-semibold bg-lightBlack md:w-auto md:self-center cursor-pointer left-6 right-6 text-brightYellow">
+        <a (click)="goTo2023()">2023</a>
+        <a (click)="goTo2022()">2022</a>
+        <a (click)="goTo2021()">2021</a>
+        <a (click)="goTo2020()">2020</a>        
     </div>
 </div>

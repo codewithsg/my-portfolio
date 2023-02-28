@@ -11,6 +11,14 @@ export class ProjectSidebarMenuComponent {
     private router:Router
   ){}
 
+  toggleProjectSideBarMenu(){
+    const btn = document.getElementById('projectSideBarArrow');
+    const sideBar = document.getElementById('projectSideBarMenu');
+    btn?.classList.toggle('rotate-180')
+    // sideBar?.classList.toggle('flex')
+    sideBar?.classList.toggle('hidden')
+  }
+
   goToAll(){}
 
   goTo2020(){
