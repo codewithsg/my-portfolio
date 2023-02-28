@@ -14,22 +14,21 @@
             </ul>
         </div>
         <!-- Hamburger Icon -->
-        <div (click)="hamburgerIconClick()">
-            <button (click)="hamburgerIconClick()" id="menu-btn" class="hamburger xs:hidden">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
-        </div>
+        
+        <button (click)="hamburgerIconClick()" id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
     </div>
 
     <!-- Mobile Menu -->
-    <div class="xs:hidden">
+    <div class="md:hidden">
         <div id="menu"
-            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-semibold bg-lightBlack xs:self-center left-6 right-6 drop-shadow-md text-grayishWhite">
-            <a href="hello" class="hover:bg-darkBlack hover:text-brightYellow hover:font-bold">Hello</a>
-            <a href="about/bio" class="hover:bg-darkBlack hover:text-brightYellow hover:font-bold">About</a>
-            <a href="projects/two-three" class="hover:bg-darkBlack hover:text-brightYellow hover:font-bold">Project</a>
+            class="absolute font-inter  flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-lightBlack xs:w-auto xs:self-center left-6 right-6 text-grayishWhite">
+            <a href="hello">Hello</a>
+            <a href="about/bio">About</a>
+            <a href="project/twenty-three">Project</a>
         </div>
     </div>
 </nav>

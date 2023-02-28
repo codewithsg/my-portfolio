@@ -5,24 +5,25 @@
     font-weight: 600;
 }
 
-.hamburger{
-    // cursor:pointer;
-    width:40px;
-    height:40px;
-    transition:all 2s;
-    position:relative;
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
 }
+
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
   position: absolute;
-  // top: 15px;
+  top: 15px;
   left: 45vw;
   width: 24px;
   height: 2px;
   background: #8E9093;
-  transform: rotate(90);
-  transition: all 1s;
+  transform: rotate(0);
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
