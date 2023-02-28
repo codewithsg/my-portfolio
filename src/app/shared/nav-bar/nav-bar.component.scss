@@ -9,7 +9,7 @@
   cursor: pointer;
   width: 24px;
   height: 24px;
-  // transition: all 0.25s;
+  transition: all 0.25s;
   position: relative;
 }
 
@@ -17,8 +17,8 @@
 .hamburger-middle,
 .hamburger-bottom {
   position: absolute;
-  // top: 15px;
-  left: 45vw;
+  top: 15px;
+  left: 40vw;
   width: 24px;
   height: 2px;
   background: #8E9093;
