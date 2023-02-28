@@ -1,4 +1,5 @@
-<div class="bg-normalBlack relative w-[230px] h-[95vh] z-40">
+<!-- this is about side bar menu this should be shown in md screen -->
+<div class="hidden bg-normalBlack relative  w-[150px] h-[95vh] z-40 md:block lg:w-[230px]">
     <div class="fixed w-[230px] h-full">
         <p class="text-textWhite text-[24px] p-[20px]">About</p>
         <ul class="mt-[-10px]">
@@ -27,23 +28,21 @@
                     src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar">
                 <p class="font-firaCode font-noraml text-[16px] text-brightYellow"> Skills</p>
             </li>
-                <ul id="skillsUl" class="hidden">
-                    <li (click)="goToTechSkill()" routerLinkActive="active-link"
-                        class="cursor-pointer hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]"
-                            src="./../../../assets/img/darkPurpleRightArrow.svg"
-                            alt="right arrow for about menu sidebar">
-                        <p class="font-firaCode font-medium text-[14px] text-darkPurple"><a
-                                [routerLink]="['/about/tech-skill']">Tech Skills</a></p>
-                    </li>
-                    <li (click)="goToSoftSkill()" routerLinkActive="active-link"
-                        class="cursor-pointer hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]"
-                            src="./../../../assets/img/darkPurpleRightArrow.svg"
-                            alt="right arrow for about menu sidebar">
-                        <p class="font-firaCode font-medium text-[14px] text-darkPurple"><a
-                                [routerLink]="['/about/soft-skill']">Soft Skills</a></p>
-                    </li>
-                </ul>
-            
+            <ul id="skillsUl" class="hidden">
+                <li (click)="goToTechSkill()" routerLinkActive="active-link"
+                    class="cursor-pointer hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]"
+                        src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar">
+                    <p class="font-firaCode font-medium text-[14px] text-darkPurple"><a
+                            [routerLink]="['/about/tech-skill']">Tech Skills</a></p>
+                </li>
+                <li (click)="goToSoftSkill()" routerLinkActive="active-link"
+                    class="cursor-pointer hover:bg-darkBlack mt-[7px]"><img class="mr-[10px] ml-[20px]"
+                        src="./../../../assets/img/darkPurpleRightArrow.svg" alt="right arrow for about menu sidebar">
+                    <p class="font-firaCode font-medium text-[14px] text-darkPurple"><a
+                            [routerLink]="['/about/soft-skill']">Soft Skills</a></p>
+                </li>
+            </ul>
+
             <li (click)="goToTestimonies()" routerLinkActive="active-link"
                 class="mt-[10px] cursor-pointer hover:bg-darkBlack"><img class="mr-[10px] ml-[5px]"
                     src="./../../../assets/img/rightArrow.svg" alt="right arrow for about menu sidebar">
@@ -82,5 +81,49 @@
                         [routerLink]="['/about/hobbies']">Hobbies</a></p>
             </li>
         </ul>
+    </div>
+</div>
+
+<!-- this should be shown in sm and hidden in md -->
+<!-- <div  class="md:hidden block fixed h-full w-full bg-opacity-100 z-[100] mt-[40vh] left-0">
+    <a (click)="toggleSideBarMenu()" ><img  id="sideBarArrow" class="origin-center cursor-pointer" src="./../../../assets/img/sideBarMenu.svg" alt="sideBarMenu"></a>
+</div>
+
+<div class=" md:hidden fixed h-full w-full bg-opacity-0.5 left-0">
+    <div id="sideBarMenu" class="flex flex-col hidden absolute text-firaCode items-center self-end py-8 mt-10 space-y-6 font-semibold bg-lightBlack md:w-auto md:self-center cursor-pointer left-6 right-6 text-grayishWhite">
+        <a (click)="goToBiography()">Biography</a>
+        <a (click)="goToExperience()">Experience</a>
+        <a (click)="goToEducation()">Education</a>
+        <a (click)="goToTechSkill()">Tech Skill</a>
+        <a (click)="goToTestimonies()">Testimonies</a>
+        <a (click)="goToSoftSkill()">Soft Skill</a>
+        <a (click)="goToLanguage()">Language</a>
+        <a (click)="goToVolunteering()">Volunteering</a>
+        <a (click)="goToHobbies()">Hobbies</a>
+
+        
+    </div>
+</div> -->
+
+<!-- sideBarMenu.svg -->
+
+
+<div  class="md:hidden block fixed  opacity-70 z-[100] mt-[40vh] left-0">
+    <a (click)="toggleSideBarMenu()" ><img  id="sideBarArrow" class="origin-center cursor-pointer" src="./../../../assets/img/sideBarMenu.svg" alt="sideBarMenu"></a>
+</div>
+
+<div class=" md:hidden fixed h-full w-full opacity-90 left-0">
+    <div id="sideBarMenu" class="flex flex-col hidden absolute text-firaCode items-center self-end py-8 mt-10 space-y-6 font-semibold bg-lightBlack md:w-auto md:self-center cursor-pointer left-6 right-6 text-brightYellow">
+        <a (click)="goToBiography()">Biography</a>
+        <a (click)="goToExperience()">Experience</a>
+        <a (click)="goToEducation()">Education</a>
+        <a (click)="goToTechSkill()">Tech Skill</a>
+        <a (click)="goToSoftSkill()">Soft Skill</a>
+        <a (click)="goToTestimonies()">Testimonies</a>
+        <a (click)="goToLanguage()">Language</a>
+        <a (click)="goToVolunteering()">Volunteering</a>
+        <a (click)="goToHobbies()">Hobbies</a>
+
+        
     </div>
 </div>

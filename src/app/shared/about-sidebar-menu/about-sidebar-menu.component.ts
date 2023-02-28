@@ -19,6 +19,20 @@ export class AboutSidebarMenuComponent implements OnInit {
     if(this.router.url === '/about/tech-skill' || this.router.url === '/about/soft-skill'){
       this.toogleSkillUl();
     }
+
+    // const btn = document.getElementById('sideBarArrow');
+    // const sideBar = document.getElementById('menu');
+    // btn?.addEventListener('click',()=>{
+    //   sideBar?.classList.toggle('hidden')
+    // })
+  }
+
+  toggleSideBarMenu(){
+    const btn = document.getElementById('sideBarArrow');
+    const sideBar = document.getElementById('sideBarMenu');
+    btn?.classList.toggle('rotate-180')
+    // sideBar?.classList.toggle('flex')
+    sideBar?.classList.toggle('hidden')
   }
 
   toogleExtraUl(){
