@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<div  class="md:hidden block fixed  opacity-70 z-[100] mt-[40vh] left-0">
+<!-- <div  class="md:hidden block fixed  opacity-70 z-[100] mt-[40vh] left-0">
     <a (click)="toggleProjectSideBarMenu()" ><img  id="projectSideBarArrow" class="origin-center cursor-pointer" src="./../../../assets/img/sideBarMenu.svg" alt="sideBarMenu"></a>
 </div>
 
@@ -21,4 +21,15 @@
         <a (click)="goTo2021()">2021</a>
         <a (click)="goTo2020()">2020</a>        
     </div>
+</div> -->
+
+<div (click)="toggleProjectSideBarMenu()" class="fixed mt-[40vh]">
+    <a><img id="projectSideBarArrow" class="origin-center cursor-pointer" src="./../../../assets/img/sideBarMenu.svg" alt="sidebar menu"></a>
+</div>
+
+<div id="projectSideBarMenu" class="hidden ml-[40px] flex flex-col text-firaCode items-center py-8 mt-10 space-y-6 text-brightYellow md:hidden">
+    <a class="cursor-pointer" (click)="goTo2023">2023</a>
+    <a class="cursor-pointer" (click)="goTo2022">2022</a>
+    <a class="cursor-pointer" (click)="goTo2021">2021</a>
+    <a class="cursor-pointer" (click)="goTo2020">2020</a>
 </div>
