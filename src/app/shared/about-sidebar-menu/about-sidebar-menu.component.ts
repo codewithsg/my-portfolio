@@ -29,10 +29,11 @@ export class AboutSidebarMenuComponent implements OnInit {
 
   toggleSideBarMenu(){
     const btn = document.getElementById('sideBarArrow');
-    const sideBar = document.getElementById('sideBarMenu');
+    const sideBarMenu = document.getElementById('sideBarMenu');
+    // const sideBar = document.getElementById('sideBar')
     btn?.classList.toggle('rotate-180')
     // sideBar?.classList.toggle('flex')
-    sideBar?.classList.toggle('hidden')
+    sideBarMenu?.classList.toggle('hidden')
   }
 
   toogleExtraUl(){

@@ -1,4 +1,70 @@
 <div class="h-full flex">
     <app-about-sidebar-menu></app-about-sidebar-menu>
-    <p>certificate works!</p>
+    <div class="text-textWhite mb-[52px] ml-[20px]">
+        <p class="text-[24px] font-semibold">Certificate</p>
+        <div class="ml-[20px] mt-[20px] text-[18px] text-blackWhite">
+            <p class="mr-[40px] font-medium text-justify">Although I don't posses any formal certificates to my field of
+                work, I am a
+                self-motivated learner who has gained proficiency in programming and coding through independent study
+                using resources such as documentation, Google, Stack Overflow and YouTube.</p>
+            <!-- <button (click)="showCertificate()"
+                class="border mt-[20px] xs:ml-[60px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">See
+                Certificates</button> -->
+        </div>
+        <div class="mt-[20px] ml-[20px]">
+            <!-- Drone Racing -->
+            <div class="mb-[20px]">
+                <p class="text-[20px] font-semibold">Kathford Kathfest Drone Racing Participant</p>
+                <div class="text-[16px] text-blackWhite mt-[20px] ml-[20px]">
+                    <p class="mr-[40px]">I participated in Kathfest for Drone Racing organized by Kathford, and was
+                        awarded this certificate
+                        for my participation.</p>
+                    <button (click)="showDroneRacingCertificate()"
+                        class="border mt-[20px] ml-[20px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full"><p *ngIf="!droneRacing">See Certificate</p><p *ngIf="droneRacing">Hide Certificate</p></button>
+                    <img id="droneRacing" class="hidden w-[100vw] mt-[20px] block mx-auto lg:w-[50vw]"
+                        src="./../../../assets/img/droneRacing.JPG" alt="drone racing">
+                </div>
+            </div>
+
+            <!-- Drone Fly and Build -->
+            <div class="mb-[20px]">
+                <p class="text-[20px] font-semibold">Kathfest Drone Build and Fly Completion</p>
+                <div class="text-[16px] text-blackWhite mt-[20px] ml-[20px]">
+                    <p class="mr-[40px]">I completed the drone build and fly program offered by Kathfest, and was
+                        awarded this certificate for my achievement.</p>
+                    <button (click)="showDroneBuildCertificate()"
+                        class="border mt-[20px] ml-[20px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full"><p *ngIf="!droneBuild">See Certificate</p><p *ngIf="droneBuild">Hide Certificate</p></button>
+                    <img id="droneBuild" class="hidden w-[100vw] mt-[20px] block mx-auto lg:w-[50vw]"
+                        src="./../../../assets/img/droneBuild.JPG" alt="drone racing">
+                </div>
+            </div>
+
+            <!-- Audrino Training -->
+            <div class="mb-[20px]">
+                <p class="text-[20px] font-semibold">Basic Arduino Training Workshop Completion</p>
+                <div class="text-[16px] text-blackWhite mt-[20px] ml-[20px]">
+                    <p class="mr-[40px]">I participated in the three-day workshop on Basic Arduino Training organized by
+                        ROBOKATH and supported by Kathford FOSS Community, and was awarded this certificate for my
+                        completion of the program.</p>
+                    <button (click)="showArduinoCertificate()"
+                        class="border mt-[20px] ml-[20px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full"><p *ngIf="!arduinoTraining">See Certificate</p><p *ngIf="arduinoTraining">Hide Certificate</p></button>
+                    <img id="arduinoTraining" class="hidden w-[100vw] mt-[20px] block mx-auto lg:w-[50vw]"
+                        src="./../../../assets/img/audrinoTraining.JPG" alt="drone racing">
+                </div>
+            </div>
+
+            <!-- ICC Certificate -->
+            <div class="mb-[20px]">
+                <p class="text-[20px] font-semibold">Classical Hindustani Tabla Course Completion</p>
+                <div class="text-[16px] text-blackWhite mt-[20px] ml-[20px]">
+                    <p class="mr-[40px]">I completed a one-year classroom course on Classical Hindustani Tabla at the
+                        Indian Cultural Center during the 2016-2017 academic year, and was awarded this certificate for
+                        my achievement.</p>
+                    <button (click)="showICCCertificate()"
+                        class="border mt-[20px] ml-[20px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full"><p *ngIf="!iccCertificate">See Certificate</p><p *ngIf="iccCertificate">Hide Certificate</p></button>
+                    <img id="iccCertificate" class="hidden w-[100vw] mt-[20px] block mx-auto lg:w-[50vw]" src="./../../../assets/img/iccCertificate.JPG" alt="icc certificate">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
