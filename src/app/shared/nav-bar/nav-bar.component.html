@@ -23,9 +23,9 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div class="xs:hidden">
+    <div class="xs:hidden relative">
         <div id="menu"
-            class="absolute hidden font-inter  flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-lightBlack xs:w-auto xs:self-center left-6 right-6 text-grayishWhite">
+            class="fixed hidden font-inter  flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-lightBlack xs:w-auto xs:self-center left-6 right-6 text-grayishWhite">
             <a (click)="gotoHello()">Hello</a>
             <a (click)="gotoAbout()">About</a>
             <a (click)="gotoProject()">Project</a>

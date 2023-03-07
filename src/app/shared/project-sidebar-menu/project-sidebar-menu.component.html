@@ -27,9 +27,11 @@
     <a><img id="projectSideBarArrow" class="origin-center cursor-pointer" src="./../../../assets/img/sideBarMenu.svg" alt="sidebar menu"></a>
 </div>
 
-<div id="projectSideBarMenu" class="hidden ml-[40px] flex flex-col text-firaCode items-center py-8 mt-10 space-y-6 text-brightYellow md:hidden">
-    <a class="cursor-pointer" (click)="goTo2023()">2023</a>
-    <a class="cursor-pointer" (click)="goTo2022()">2022</a>
-    <a class="cursor-pointer" (click)="goTo2021()">2021</a>
-    <a class="cursor-pointer" (click)="goTo2020()">2020</a>
+<div class="relative">
+<div id="projectSideBarMenu" class="hidden fixed ml-[20vw] flex flex-col bg-lightBlack text-firaCode space-y-6 items-center mt-[27vh] text-brightYellow md:hidden">
+    <a class="cursor-pointer py-[10px] px-[30vw]" (click)="goTo2023()">2023</a>
+    <a class="cursor-pointer py-[10px] px-[30vw]" (click)="goTo2022()">2022</a>
+    <a class="cursor-pointer py-[10px] px-[30vw]" (click)="goTo2021()">2021</a>
+    <a class="cursor-pointer py-[10px] px-[30vw]" (click)="goTo2020()">2020</a>
+</div>
 </div>
