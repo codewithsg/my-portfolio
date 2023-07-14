@@ -23,7 +23,8 @@ module.exports = {
         brightWhite: "#FFFFFF",
         brightYellow: "#E8AE39",
         skyBlue: "#6099BD",
-        darkPurple:'#BC3FBC'
+        darkPurple:'#BC3FBC',
+        borderBlack: '#404040'
       },
       fontFamily: {
         "inter": ['"Inter"', 'sans-serif'],
