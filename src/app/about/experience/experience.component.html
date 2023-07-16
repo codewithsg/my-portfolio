@@ -1,41 +1,23 @@
 <div class="h-full flex">
     <app-about-sidebar-menu></app-about-sidebar-menu>
-    <div class="text-textWhite mb-[52px] font-firaCode">
-        <p class="font-semibold text-[24px] ml-[20px] mt-[20px]">Experience</p>
-        <div class="font-medium ml-[20px] mt-[40px]">
-            <p class="ml-[20px] text-[20px]">Codniv Innovations</p>
-            <br>
-            <div class="text-blackWhite ml-[20px] mb-[20px]">
-                <p class="text-[16px] ml-[20px]">Full Stack Developer</p>
-                <br>
-                <p class="text-[14px] ml-[40px]">01 July 2023 - 01 April 2024, 9mos</p>
-            </div>
-            <div class="text-blackWhite ml-[20px]">
-                <p class="text-[16px] ml-[20px]">Intern as NodeJS Backend Developer</p>
-                <br>
-                <p class="text-[14px] ml-[40px]">27 March 2023 - 30 June 2023, 3mos</p>
+    <div class="text-textWhite font-firaCode ml-[20px]">
+        <p class="font-semibold text-[24px] mt-[20px]">Experience</p>
+        <div class="border-l-[1px] border-borderBlack">
+            <div *ngFor="let item of experience" class="font-medium ml-[15px] pt-[20px]">
+                <div class="flex">
+                    <img src={{item.logo}} alt="logo" />
+                    <p class="font-semibold text-[24px] ml-[20px]">{{item.office}}</p>
+                </div>
+                <div class="border-l-[1px] border-borderBlack">
+                    <div *ngFor="let exp of item.experience" class="text-blackWhite ml-[20px] pt-[20px]">
+                        <p class="text-[16px] ml-[20px]">{{exp.position}}</p>
+                        <div class="text-[14px] ml-[20px] pt-[10px] border-l-[1px] border-borderBlack">
+                            <p class="ml-[20px]">{{exp.period}}</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="font-medium ml-[20px] mt-[40px]">
-            <p class="ml-[20px] text-[20px]">Mero Network Pvt. Ltd.</p>
-            <br>
-            <div class="text-blackWhite ml-[20px]">
-                <p class="text-[16px] ml-[20px]">Intern as Mobile Developer</p>
-                <br>
-                <p class="text-[14px] ml-[40px]">Nov 2022 - Jan 2022, 3mos</p>
-            </div>
-        </div>
-
-        <div class="font-medium ml-[20px] mt-[40px]">
-            <p class="ml-[20px] text-[20px]">Freelance</p>
-            <br>
-            <div class="text-blackWhite ml-[20px]">
-                <p class="text-[16px] ml-[20px]">Backend Developer</p>
-                <br>
-                <p class="text-[14px] ml-[40px]">May 2021 - Oct 2022, 1yr 5mos</p>
-            </div>
-        </div>
-
     </div>
 </div>

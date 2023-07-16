@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./tech-skill.component.scss']
 })
 export class TechSkillComponent {
-
+  techSkills = [
+    {
+      logo:'./../../../assets/img/typescript.svg',
+      name:'TypeScript',
+      skill:''
+    }
+  ]
 }
