@@ -1,21 +1,32 @@
 <div class="h-full flex">
     <app-about-sidebar-menu></app-about-sidebar-menu>
-    <div class="text-textWhite mb-[52px] font-firaCode mt-[20px] ml-[20px]">
-        <p class="text-[24px] font-semibold">Language</p>
-        <!-- Nepali -->
-        <div class="mt-[20px] ml-[20px]">
-            <p class="text-[20px]">Nepali Language</p>
-            <p class="text-blackWhite ml-[20px] mt-[20px]">Natural Tounge</p>
-        </div>
-        <!-- English -->
-        <div class="mt-[30px] ml-[20px]">
-            <p class="text-[20px]">English Language</p>
-            <p class="text-blackWhite ml-[20px] mt-[20px]">Fluent</p>
-        </div>
-        <!-- Hindi -->
-        <div class="mt-[30px] ml-[20px]">
-            <p class="text-[20px]">Hindi Language</p>
-            <p class="text-blackWhite ml-[20px] mt-[20px]">Fluent</p>
+    <div class="font-firaCode mb-[52px] text-textWhite ml-[20px] mt-[20px]">
+        <p class="font-semiboold text-[24px]">Language</p>
+        <div *ngFor="let language of languages"
+            class="border-borderBlack border-l-[1px]">
+            <div class="pt-[30px] ml-[20px]">
+                <p class="text-[20px]">{{language.name}}</p>
+                <div class="border-l-[1px] border-borderBlack">
+                    <div class="ml-[20px] pt-[10px]">
+                        <p class="text-blackWhite">{{language.category}}</p>
+                        <div class="border-borderBlack border-l-[1px]">
+                            <div class="flex flex-row ml-[20px] pt-[10px]">
+                                <div
+                                    *ngFor="let star of getStars(language.skill)">
+                                    <img src="./../../../assets//img/star.svg"
+                                        alt="star" />
+                                </div>
+                                <div
+                                    *ngFor="let star of getStars(5-(language.skill))">
+                                    <img
+                                        src="./../../../assets//img/star-empty-icon.svg"
+                                        alt="empty star" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
