@@ -1,10 +1,11 @@
 <div class="h-full flex">
     <app-about-sidebar-menu></app-about-sidebar-menu>
-    <div class="text-textWhite font-firaCode ml-[20px]">
+    <div class="text-textWhite font-firaCode ml-[20px] mb-[52px]">
         <p class="font-semibold text-[24px] mt-[20px]">About Me</p>
         <div class="border-l-[1px] border-borderBlack">
-            <div *ngFor="let aboutMe of aboutMeParagraphs" class="text-[16px] ml-[20px] pt-[20px] mr-[20px]">
-                    <p class="flex text-justify">{{aboutMe}}</p>
+            <div *ngFor="let aboutMe of aboutMeParagraphs"
+                class="text-[16px] ml-[20px] pt-[20px] mr-[20px]">
+                <p class="flex text-justify">{{aboutMe}}</p>
             </div>
         </div>
     </div>
