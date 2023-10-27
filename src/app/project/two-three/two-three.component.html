@@ -1,49 +1,44 @@
-<div class="h-full w-full flex">
+<div class="h-full flex">
     <app-project-sidebar-menu></app-project-sidebar-menu>
-    <div class="text-textWhite font-firaCode">
-        <p class="text-[24px] p-[20px] font-semibold">Projects</p>
-        <!-- Online Sewa -->
-        <div class="ml-[40px] font-medium mb-[52px] ">
-            <p class="text-[20px]">Online Sewa</p>
-            <div class="text-blackWhite mt-[20px] xs:ml-[20px]">
-                <div class="flex text-[18px] flex-col xs:flex-row">
-                    <p class="mr-[30px]">NodeJS .</p>
-                    <p class="mr-[30px]">TypeScript .</p>
-                    <p class="mr-[30px]">PostgreSQL .</p>
+    <div
+        class="text-textWhite font-firaCode mb-[52px] xs:ml-[10px] sm:ml-[20px] pt-[20px]">
+        <p class="text-[24px]  font-semibold">Projects</p>
+        <div *ngFor="let project of projects"
+            class="border-borderBlack border-l-[1px]">
+            <div class="pt-[20px] ml-[10px] sm:ml-[20px]">
+                <p class="text-[20px]">{{project.name}}</p>
+                <div
+                    class="border-borderBlack sm:border-l-[1px] text-blackWhite">
+                    <div class="pt-[20px] sm:ml-[20px]">
+                        <div class="flex flex-col xs:flex-row">
+                            <div class="flex text-[18px]"
+                                *ngFor="let skill of project.skills">
+                                <p class="mr-[20px]">{{skill}} .</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pt-[10px] sm:ml-[10px]">
+                                <p class="16px">{{project.duration}}</p>
+                                <div
+                                    class="border-borderBlack sm:border-l-[1px]">
+                                    <div class="sm:ml-[20px] pt-[10px]">
+                                        <p
+                                            class="text-[14px] text-justify mr-[10px] xs:mr-[80px]"
+                                            [innerHTML]="project.description"></p>
+                                        <div
+                                            class="border-borderBlack border-l-[1px]">
+                                            <button
+                                                (click)="openProject(project.url)"
+                                                *ngIf="project.isAvailable"
+                                                class="border mt-[20px] xs:ml-[20px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">Show
+                                                Project</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-[16px] mt-[20px] xs:ml-[20px]">June 2023 - Present</p>
-                <p class="text-[14px] mt-[20px] text-justify mr-[10px] xs:mr-[80px] xs:ml-[40px]">The online sewa project enables businesses to create and publish advertisments, job postings, and events. Users can browse and engage with theseposts, allowing them to view and interact with the content shared by business.</p>
-                <!-- <button class="hidden border mt-[20px] xs:ml-[60px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">Show Project</button> -->
-            </div>
-        </div>
-
-        <!-- Attack Surface Management -->
-        <div class="ml-[40px] font-medium mb-[52px] ">
-            <p class="text-[20px]">Attack Surface Management</p>
-            <div class="text-blackWhite mt-[20px] xs:ml-[20px]">
-                <div class="flex text-[18px] flex-col xs:flex-row">
-                    <p class="mr-[30px]">NodeJS .</p>
-                    <p class="mr-[30px]">TypeScript .</p>
-                    <p class="mr-[30px]">PostgreSQL .</p>
-                </div>
-                <p class="text-[16px] mt-[20px] xs:ml-[20px]">April 2023 - June 2023</p>
-                <p class="text-[14px] mt-[20px] text-justify mr-[10px] xs:mr-[80px] xs:ml-[40px]">The project involved the backend of an Attack Surface Management system, where data was retrieved from a database. The organization's assets and their associated issues were managed and resolved, with the ability to modify the status and severity of each issue based on specific requirements.</p>
-                <!-- <button class="hidden border mt-[20px] xs:ml-[60px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">Show Project</button> -->
-            </div>
-        </div>
-
-        <!-- HRM -->
-        <div class="ml-[40px] font-medium mb-[52px] ">
-            <p class="text-[20px]">Human Resource Management System</p>
-            <div class="text-blackWhite mt-[20px] xs:ml-[20px]">
-                <div class="flex text-[18px] flex-col xs:flex-row">
-                    <p class="mr-[30px]">Ionic VueJS .</p>
-                    <p class="mr-[30px]">Laravel .</p>
-                    <p class="mr-[30px]">MySQL .</p>
-                </div>
-                <p class="text-[16px] mt-[20px] xs:ml-[20px]">Dec 2022 - Jan 2023</p>
-                <p class="text-[14px] mt-[20px] text-justify mr-[10px] xs:mr-[80px] xs:ml-[40px]">Human Resource Management is a mobile application that streamlines attendance management, leave requests and provides insightful reports. Employees can quickly and easily log their attendance and system saves their location to ensure they are logging from designated work area. Additionally employees can request leaves directly from app, which saves time and simplify the process. This app also keep track of workdays, so that employees can plan their time off accordingly. The system was mainly designed to make attendance and leave management simple, efficient and user-friendly.</p>
-                <button class="hidden border mt-[20px] xs:ml-[60px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">Show Project</button>
             </div>
         </div>
     </div>
