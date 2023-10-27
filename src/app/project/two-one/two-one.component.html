@@ -1,59 +1,44 @@
-<div class="h-full w-full flex">
+<div class="h-full flex">
     <app-project-sidebar-menu></app-project-sidebar-menu>
-    <div class="text-textWhite font-firaCode">
-        <p class="text-[24px] p-[20px] font-semibold">Projects</p>
-        <!-- lms -->
-        <div class="ml-[40px] font-medium">
-            <p class="text-[20px]">Learning Management System</p>
-            <div class="text-blackWhite mt-[20px] ml-[20px]">
-                <div class="flex text-[18px] flex-col xs:flex-row">
-                    <p class="mr-[30px]">TypeScript .</p>
-                    <p class="mr-[30px]">Node.js .</p>
-                    <p class="mr-[30px]">Express.js .</p>
-                    <p class="mr-[30px]">MongoDB .</p>
-
+    <div
+        class="text-textWhite font-firaCode mb-[52px] xs:ml-[10px] sm:ml-[20px] pt-[20px]">
+        <p class="text-[24px]  font-semibold">Projects</p>
+        <div *ngFor="let project of projects"
+            class="border-borderBlack border-l-[1px]">
+            <div class="pt-[20px] ml-[10px] sm:ml-[20px]">
+                <p class="text-[20px]">{{project.name}}</p>
+                <div
+                    class="border-borderBlack sm:border-l-[1px] text-blackWhite">
+                    <div class="pt-[20px] sm:ml-[20px]">
+                        <div class="flex flex-col xs:flex-row">
+                            <div class="flex text-[18px]"
+                                *ngFor="let skill of project.skills">
+                                <p class="mr-[20px]">{{skill}} .</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pt-[10px] sm:ml-[10px]">
+                                <p class="16px">{{project.duration}}</p>
+                                <div
+                                    class="border-borderBlack sm:border-l-[1px]">
+                                    <div class="sm:ml-[20px] pt-[10px]">
+                                        <p
+                                            class="text-[14px] text-justify mr-[10px] xs:mr-[80px]"
+                                            [innerHTML]="project.description"></p>
+                                        <div
+                                            class="border-borderBlack border-l-[1px]">
+                                            <button
+                                                (click)="openProject(project.url)"
+                                                *ngIf="project.isAvailable"
+                                                class="border mt-[20px] xs:ml-[20px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">Show
+                                                Project</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-[16px] mt-[20px] xs:ml-[20px]">Apr 2021 - Dec 2021</p>
-                <p class="text-[14px] mt-[20px] text-justify mr-[10px] xs:mr-[80px] xs:ml-[40px]">Interactive Video Learning Management
-                    System is a comprehensive platform designed to facilitate the learning process through the use of
-                    interactive video courses. The system includes a variety of features such as Q&A sessions, video
-                    courses, exercises, quizzes, blog, and progress tracking tools. The platform is designed to be used
-                    by both individuals and institutions like colleges and schools.<br><br>Overall, LMS is a
-                    comprehensice platform that provides a wide range of features and tools to facilitate the learning
-                    process. Whether used by individuals or institutions, the system is designed to provide an engaging
-                    and interactive learning experience that is both effective and efficient.</p>
-                <button (click)="goToLMS()"
-                    class="border mt-[20px] xs:ml-[60px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">Show
-                    Project</button>
-            </div>
-        </div>
-
-        <!-- Product Recommendation -->
-        <div class="ml-[40px] mb-[52px] mt-[40px] mb-[52px]  font-medium">
-            <p class="text-[20px]">Product Recommendation</p>
-            <div class="text-blackWhite mt-[20px] ml-[20px]">
-                <div class="flex text-[18px] flex-col xs:flex-row">
-                    <p class="mr-[30px]">JavaScript .</p>
-                    <p class="mr-[30px]">Python .</p>
-                    <p class="mr-[30px]">Django .</p>
-                    <p class="mr-[30px]">K-Means Clustering .</p>
-                    <p class="mr-[30px]">SQLite 3 .</p>
-                </div>
-                <p class="text-[16px] mt-[20px] xs:ml-[20px]">Aug 2021 - Feb 2022</p>
-                <p class="text-[14px] mt-[20px] text-justify mr-[10px] xs:mr-[80px] xs:ml-[40px]">Product Recommendation is a web
-                    application that recommends products to users based on their purchase history. The application is
-                    designed to help users discover new products that may be intrested in.<br><br>Users can view product
-                    details such as, product name, description, price and availability and add products to cart
-                    directly. When a user purchase a product, the system analyzes their purchase history and recomends
-                    five other products that are related to their purchase.These recommendations are based on various
-                    factor, such as user's previous purchase, products that are bought together and popularity od
-                    products in user's area.<br><br>Overall, Product Recommendation is a powerful web application that
-                    provides personalized recommendations to users. With its user-friendly interface and efficient
-                    recommendation algorithm, application helps users discover new products and improve their overall
-                    shopping experience.</p>
-                <button (click)="goToProductRecommendation()"
-                    class="border mt-[20px] ml-[60px] capitalize border-grayishWhite hover:border-brightYellow text-blackWhite hover:text-darkPurple font-medium py-2 px-4 rounded-full">Show
-                    Project</button>
             </div>
         </div>
     </div>

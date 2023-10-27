@@ -1,33 +1,47 @@
 <div class="h-full flex">
     <app-about-sidebar-menu></app-about-sidebar-menu>
     <div class="font-firaCode mb-[52px] text-textWhite ml-[20px] mt-[20px]">
-        <p class="font-semibold text-[24px]">Soft Skills</p>
-        <div class="ml-[20px] font-medium text-[20px]">
-            <!-- Problem Solving -->
-            <div class="flex items-center mt-[20px]">
-                <img src="./../../../assets/img/problemSolving.svg" alt="problem solving svg">
-                <p class="ml-[20px]">Problem-Solving</p>
-            </div>
-            <!-- Sharp Memory -->
-            <div class="flex items-center mt-[20px]">
-                <img src="./../../../assets/img/sharpMemory.svg" alt="sharp memory svg">
-                <p class="ml-[20px]">Fast Learner</p>
-            </div>
-            <!-- Efficient Laziness -->
-            <div class="flex items-center mt-[20px]">
-                <img src="./../../../assets/img/efficientLaziness.svg" alt="efficientLaziness svg">
-                <p class="ml-[20px]">Efficient Laziness</p>
-            </div>
-            <!-- Self-motivation and independence -->
-            <div class="flex items-center mt-[20px]">
-                <img src="./../../../assets/img/selfMotivation.svg" alt="self motivation svg">
-                <p class="ml-[20px]">Self-Motivation and Independence</p>
-            </div>
-            <!-- dedication -->
-            <div class="flex items-center mt-[20px]">
-                <img src="./../../../assets/img/dedication.svg" alt="dedication svg">
-                <p class="ml-[20px]">Dedication</p>
+        <p class="font-semibold text-[24px] capitalize">Soft Skill</p>
+        <div *ngFor="let softSkill of softSkills"
+            class="border-l-[1px] border-borderBlack font-medium text-[20px]">
+            <div class="flex flex-row items-center pt-[20px] ml-[20px]">
+                <img src={{softSkill.logo}} alt={{softSkill.name}} />
+                <p class="ml-[20px]">{{softSkill.name}}</p>
             </div>
         </div>
     </div>
 </div>
+
+<!-- <div class="h-full flex">
+    <app-about-sidebar-menu></app-about-sidebar-menu>
+    <div class="font-firaCode mb-[52px] text-textWhite ml-[20px] mt-[20px]">
+        <p class="font-semibold text-[24px]">Soft Skills</p>
+        <div class="ml-[20px] font-medium text-[20px]">
+            <div class="flex items-center mt-[20px]">
+                <img src="./../../../assets/img/problemSolving.svg"
+                    alt="problem solving svg">
+                <p class="ml-[20px]">Problem-Solving</p>
+            </div>
+            <div class="flex items-center mt-[20px]">
+                <img src="./../../../assets/img/sharpMemory.svg"
+                    alt="sharp memory svg">
+                <p class="ml-[20px]">Fast Learner</p>
+            </div>
+            <div class="flex items-center mt-[20px]">
+                <img src="./../../../assets/img/efficientLaziness.svg"
+                    alt="efficientLaziness svg">
+                <p class="ml-[20px]">Efficient Laziness</p>
+            </div>
+            <div class="flex items-center mt-[20px]">
+                <img src="./../../../assets/img/selfMotivation.svg"
+                    alt="self motivation svg">
+                <p class="ml-[20px]">Self-Motivation and Independence</p>
+            </div>
+            <div class="flex items-center mt-[20px]">
+                <img src="./../../../assets/img/dedication.svg"
+                    alt="dedication svg">
+                <p class="ml-[20px]">Dedication</p>
+            </div>
+        </div>
+    </div>
+</div> -->

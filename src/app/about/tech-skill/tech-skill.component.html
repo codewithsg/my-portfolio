@@ -1,68 +1,30 @@
 <div class="h-full flex">
     <app-about-sidebar-menu></app-about-sidebar-menu>
     <div class="font-firaCode mb-[52px] text-textWhite ml-[20px] mt-[20px]">
-        <p class="font-semibold text-[24px] capitalize">Tech skill</p>
-        <!-- typescript -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/typescript.svg" alt="typescript logo">
-            <p class="ml-[20px] text-[20px] font-medium">TypeScript</p>
+        <p class="font-semibold text-[24px] capitalize">Tech Skill</p>
+        <div *ngFor="let techSkill of techSkills"
+            class="border-l-[1px] border-borderBlack">
+            <div class="ml-[20px] pt-[20px]">
+                <div class="flex flex-row items-center">
+                    <img src={{techSkill.logo}} alt={{techSkill.name}}>
+                    <div class="flex flex-col ml-[20px]">
+                        <p class="text-[20px] font-medium">{{techSkill.name}}</p>
+                        <div class="flex flex-row">
+                            <div
+                                *ngFor="let star of getStars(techSkill.skill); let i=index">
+                                <img src="./../../../assets//img/star.svg"
+                                    alt="star" />
+                            </div>
+                            <div
+                                *ngFor="let star of getStars(5-(techSkill.skill)); let i=index">
+                                <img
+                                    src="./../../../assets//img/star-empty-icon.svg"
+                                    alt="star" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- NestJS -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/nestjsLogo.svg" alt="nestjs logo">
-            <p class="ml-[20px] text-[20px] font-medium">NestJS</p>
-        </div>
-        <!-- MongoDB -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/mongodbLogo.svg" alt="mongodb logo">
-            <p class="ml-[20px] text-[20px] font-medium">MongoDB</p>
-        </div>
-        <!-- MySQL -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/mysqlLogo.svg" alt="mySql logo">
-            <p class="ml-[20px] text-[20px] font-medium">MySQL</p>
-        </div>
-        <!-- PostgreSQL -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/postgresql.svg" alt="postgresql logo">
-            <p class="ml-[20px] text-[20px] font-medium">PostgreSQL</p>
-        </div>
-        <!-- JEST -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/jestLogo.svg" alt="jest logo">
-            <p class="ml-[20px] text-[20px] font-medium">Jest</p>
-        </div>
-        <!-- AWS -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/awsLogo.svg" alt="aws logo">
-            <p class="ml-[20px] text-[20px] font-medium">Amazon Web Service</p>
-        </div>
-        <!-- Git -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/gitLogo.svg" alt="git logo">
-            <p class="ml-[20px] text-[20px] font-medium">Git</p>
-        </div>
-        <!-- Angular -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/angularLogo.svg" alt="amgular logo">
-            <p class="ml-[20px] text-[20px] font-medium">Angular</p>
-        </div>
-        <!-- React -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/reactLogo.svg" alt="react logo">
-            <p class="ml-[20px] text-[20px] font-medium">React</p>
-        </div>
-        <!-- VueJS -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/vuejsLogo.svg" alt="vuejs logo">
-            <p class="ml-[20px] text-[20px] font-medium">VueJS</p>
-        </div>
-        <!-- Laravel -->
-        <div class="ml-[20px] mt-[20px] flex items-center">
-            <img src="./../../../assets/img/laravelLogo.svg" alt="laravel logo">
-            <p class="ml-[20px] text-[20px] font-medium">Laravel</p>
-        </div>
-
     </div>
 </div>

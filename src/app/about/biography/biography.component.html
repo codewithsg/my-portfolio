@@ -1,26 +1,11 @@
 <div class="h-full flex">
-        <app-about-sidebar-menu></app-about-sidebar-menu>
-    <div class="text-textWhite mb-[52px] flex-wrap">
-        <p class="font-firaCode font-semibold text-[24px] ml-[20px] mt-[20px]">About Me</p>
-        <br>
-        <div class="font-firaCode text-[16px] ml-[30px] mr-[30px] text-justify">
-            <p class="indent-[50px]">Hello, I am a backend developer with expertise in server-side development and maintainance of web
-                applications. I am responsible for ensuring that the backend of the application operates smoothy and
-                effectively, working with database, server-side languages and frameworks, and building and maintaining
-                APIs that enable communication between the front-end and backend of the application.</p>
-            <br>
-            <p class="indent-[50px]">My experience in unit and end-to-end testing using Jest has helped me to make software more stable and
-                reliable. I have worked in various industries, including finance, healthcare, e-commerce, and food. I
-                have collaborated closely with frontend developers, designers to ensure that the application meets the
-                needs of users and the business.</p>
-            <br>
-            <p class="indent-[50px]">Beyond my work in technology, I am also a social worker dedicated to help individuals, families, and
-                communities to address social problems and improve overall well-being. This experience has given me a
-                unique perspective on problem-solving and advocacy, which I apply to my work as a programmer.</p>
-            <br>
-            <p class="indent-[50px]">I am excited to continue growing my skills as a backend developer, and also eager to take on new
-                challenges and projects. Thank you for visiting my portfolio website. Please feel free to reach out to
-                me if you have any questions or would like to discuss a potential collaboration.</p>
+    <app-about-sidebar-menu></app-about-sidebar-menu>
+    <div class="text-textWhite font-firaCode ml-[20px]">
+        <p class="font-semibold text-[24px] mt-[20px]">About Me</p>
+        <div class="border-l-[1px] border-borderBlack">
+            <div *ngFor="let aboutMe of aboutMeParagraphs" class="text-[16px] ml-[20px] pt-[20px] mr-[20px]">
+                    <p class="flex text-justify">{{aboutMe}}</p>
+            </div>
         </div>
     </div>
 </div>
