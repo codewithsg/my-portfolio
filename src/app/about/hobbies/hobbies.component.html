@@ -2,35 +2,14 @@
     <app-about-sidebar-menu></app-about-sidebar-menu>
     <div class="text-textWhite mb-[52px] font-firaCode mt-[20px] ml-[20px]">
         <p class="font-semibold text-[24px]">Hobbies</p>
-        <!-- Cycling -->
-        <div class="mt-[20px] ml-[20px] flex items-center">
-            <img src="./../../../assets/img/cycling.svg" alt="cycling">
-            <p class="text-[20px] font-medium ml-[20px]">Cycling</p>
-        </div>
-        <!-- Hiking -->
-        <div class="mt-[20px] ml-[20px] flex items-center">
-            <img src="./../../../assets/img/hiking.svg" alt="hiking">
-            <p class="text-[20px] font-medium ml-[35px]">Hiking</p>
-        </div>
-        <!-- Music -->
-        <div class="mt-[20px] ml-[20px] flex items-center">
-            <img src="./../../../assets/img/music.svg" alt="music">
-            <p class="text-[20px] font-medium ml-[35px]">Listining and Playing Music</p>
-        </div>
-        <!-- Photography -->
-        <div class="mt-[20px] ml-[20px] flex items-center">
-            <img class="fill-blackWhite" src="./../../../assets/img/camera.svg" alt="photography">
-            <p class="text-[20px] font-medium ml-[20px]">Photography</p>
-        </div>
-        <!-- Reading Books -->
-        <div class="mt-[20px] ml-[20px] flex items-center">
-            <img class="fill-blackWhite h-[36px]" src="./../../../assets/img/book.svg" alt="reading">
-            <p class="text-[20px] font-medium ml-[25px]">Reading</p>
-        </div>
-        <!-- Video Games -->
-        <div class="mt-[20px] ml-[20px] flex items-center">
-            <img src="./../../../assets/img/videoGameController.svg" alt="video games">
-            <p class="text-[20px] font-medium ml-[20px]">Video Games</p>
+        <div *ngFor="let hobby of hobbies"
+            class="border-borderBlack border-l-[1px]">
+            <div class="flex items-center pt-[20px] ml-[20px]">
+                <img src={{hobby.image}} alt={{hobby.name}} class="fill-blackwhite h-[36px]"/>
+                <div class="ml-[20px] font-medium text-[20px]">
+                    <p>{{hobby.name}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
