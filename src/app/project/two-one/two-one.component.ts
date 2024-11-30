@@ -11,7 +11,7 @@ export class TwoOneComponent {
     skills: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
     duration: 'Apr 2021 - Dec 2021',
     description: 'Interactive Video Learning Management System is a comprehensive platform designed to facilitate the learning process through the use of interactive video courses. The system includes a variety of features such as Q&A sessions, video courses, exercises, quizzes, blog, and progress tracking tools. The platform is designed to be used by both individuals and institutions like colleges and schools.<br><br>Overall, LMS is a comprehensice platform that provides a wide range of features and tools to facilitate the learning process. Whether used by individuals or institutions, the system is designed to provide an engaging and interactive learning experience that is both effective and efficient.',
-    isAvailable: true,
+    isAvailable: false,
     url: 'https://github.com/codewithsg/interactive-video-lms'
   }, {
     name: 'Product Recommendation',

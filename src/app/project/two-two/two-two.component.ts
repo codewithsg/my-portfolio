@@ -10,8 +10,8 @@ export class TwoTwoComponent {
     name: 'Resturant Management System',
     skills: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
     duration: 'Jan 2022 - Apr 2022',
-    description: 'Resturant Management System was designed to streamline operations and improve efficiency. It aimed to provide comprehensive solutions to various aspects of resturant management including user management, inventory management, order management, billing, financial accounting, reporting and analysis and online ordering. However, due to lack of capital, project had to be terminated at an early stage. Only user  management, inventory management and menu modules were developed.<br><br>While the project was not completed, the developed modules provides a strong foundation for further development in future. With additional funding, resturant management system could be further developed to include additional functionalities. Ultimately, the goal of the system was to enhance the customer experience, increase operational efficiency and boost profitability.',
-    isAvailable: true,
+    description: 'The Restaurant Management System was developed to optimize workflows and increase operational efficiency. Its purpose was to deliver an all-encompassing solution for different areas of restaurant management, such as user administration, inventory control, order processing, billing, financial accounting, reporting, data analysis, and online ordering. The primary objectives of the system were to elevate the customer experience, streamline day-to-day operations, and ultimately drive greater profitability for the business.',
+    isAvailable: false,
     url: 'https://github.com/codewithsg/restaurant-management-api'
   }, {
     name: 'Art Gallary Ecommerce',
