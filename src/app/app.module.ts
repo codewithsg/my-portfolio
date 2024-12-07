@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app.routing';
 import { HelloModule } from './hello/hello.module';
 import { ProjectModule } from './project/project.module';
 import { SharedModule } from './shared/shared.module';
+import { Angulartics2GoogleAnalytics, Angulartics2Module } from 'angulartics2';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SharedModule } from './shared/shared.module';
     HelloModule,
     ProjectModule,
     AboutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Angulartics2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
